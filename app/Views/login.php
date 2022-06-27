@@ -102,7 +102,16 @@ helper('form');
                 </table> 
                 
             </div>
+            
+            <svg height="400" width="2000" style="z-index:-1;position:absolute; bottom:-15%; margin-left:15%;">
+                <polygon points="100,0 0,400 500,400" style="fill:#6ed46e;stroke:purple;stroke-width:1" />
+                <polygon points="900,200 500,400 1200,400" style="fill:#72cf72;stroke:purple;stroke-width:1" />
+                <polygon points="600,100 300,400 800,400" style="fill:#90EE90;stroke:purple;stroke-width:1" />
+                <polygon points="1400,250 1200,400 1900,400" style="fill:#52a152;stroke:purple;stroke-width:1" />
+            </svg>
         </div>
+        
+        
         
     <script src="<?php echo base_url('/assets/login/captchaScript.js');?>"></script>
     </body>

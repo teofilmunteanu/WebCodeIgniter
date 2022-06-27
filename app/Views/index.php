@@ -60,7 +60,12 @@
         <section id="about" class="about">
           <div class="container">
 
-            <div class="row">
+            <div class="row  mb-5">
+                  <audio controls autoplay loop>
+                    <source src="<?php echo base_url('/assets/general/audio/Nature_sounds.mp3');?>" type="audio/mpeg">
+                  </audio>
+            </div>  
+            <div class="row mb-5">
               <div class="col-lg-6">
                 <img src="<?php echo base_url('/assets/landing/img/about-img.jpg');?>" class="img-fluid" alt="">
               </div>
@@ -73,9 +78,15 @@
                   <li><i class="bx bx-check-double"></i> Upload your own nature photos.</li>
                   <li><i class="bx bx-check-double"></i> Explore through the collection.</li>
                 </ul>
-
+                <video width="520" height="260" controls mute>
+                    <source src="<?php echo base_url('/assets/general/video/Nature_album.mp4');?>" type="video/mp4">
+                </video>
               </div>
             </div>
+            <div class="row">
+                <iframe width="560" height="515" src="https://www.youtube.com/embed/eNUpTV9BGac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              
 
           </div>
         </section><!-- End About Section -->
