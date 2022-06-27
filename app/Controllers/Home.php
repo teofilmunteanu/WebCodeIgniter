@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\ImageModel;
 
 class Home extends BaseController
 {
@@ -17,10 +18,18 @@ class Home extends BaseController
     public function main()
     {
         if(session()->get('email') != null){
-            return view('main');
+            $model = new ImageModel();
+            $data['images'] = $model -> findAll();
+            return view('main', $data);
         }
         else{
             return redirect()->route('/');
         }
+    }
+    
+    public function logout()
+    {
+        session()->remove('email');
+        return redirect()->route('/');
     }
 }

@@ -102,7 +102,7 @@ helper('form');
                         <td><?php echo form_input($data5);?></td>
                     </tr>    
                     <tr>
-                        <td colspan="2" align="center"><input type="submit" name="submit" value="Sign up" class="btn btn-success"></td>
+                        <td colspan="2" align="center"><?php echo form_submit('submit','Sign Up', 'class="btn btn-success"');?></td>
                     </tr>
                     <tr>
                         <td colspan="2" align="center">Already have an account? </td>

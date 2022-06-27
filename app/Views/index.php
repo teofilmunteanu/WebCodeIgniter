@@ -67,7 +67,7 @@
               <div class="col-lg-6 pt-4 pt-lg-0">
                 <h3>About</h3>
                 <p class="fst-italic">
-                  Here you can explore an online collection of nature photos provided by people from everywhere!
+                  Here you can store your collection of nature photos!
                 </p>
                 <ul>
                   <li><i class="bx bx-check-double"></i> Upload your own nature photos.</li>

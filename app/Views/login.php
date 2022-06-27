@@ -91,7 +91,7 @@ helper('form');
                         <td><?php echo form_input($data4);?></td>
                     </tr>    
                     <tr>
-                        <td colspan="2" align="center"><input type="submit" name="submit" value="Log In" class="btn btn-success"></td>
+                        <td colspan="2" align="center"><?php echo form_submit('submit', 'Log In', 'class="btn btn-success"');?></td>
                     </tr>
                     <tr>
                         <td colspan="2" align="center">Don't have an account? </td>

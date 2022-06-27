@@ -9,8 +9,9 @@
 	</head>
 	<body class="is-preload">
                 
-                    <div style="background-color: #5F8F25;z-index: 20000;padding: 20px 0px;">
-                        <button class="btn btn-secondary" style="background-color:grey;">Log Out</button>
+                    <div style="background-color: #5F8F25;z-index: 20000;height:12%; padding: 20px 0px;">
+                        <a style="background-color:grey; margin-right:20px;float:right; color:white; padding:10px 15px;" href = "/WebCodeIgniter/logout">Log Out</a>
+                        <a style="background-color:grey; margin-right:20px;float:right; color:white; padding:10px 15px;" href = "/WebCodeIgniter/upload">Upload</a>
                     </div>
                 
 		<!-- Wrapper -->
@@ -29,66 +30,16 @@
                                         
 				<!-- Main -->
 					<div id="main">
-						<article class="thumb">
-							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
-							<h2>Magna feugiat lorem</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+                                            <?php foreach($images as $var){?>
+						<article class="thumb">  
+                                                    <img src="<?php echo base_url($var['image']);?>" width="100%" height="85%" alt="" />
+                                                    <div>
+                                                        <button><?php echo anchor(array('ImageController/edit/', $var['id']), 'Edit');?></button>
+                                                        <button><?php echo anchor(array('ImageController/delete/', $var['id']), 'Delete', array('onclick' => "return confirm('Do you want to delete this record')"));?></button> 
+                                                    </div>
+                                                    
 						</article>
-						<article class="thumb">
-							<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
-							<h2>Nisl adipiscing</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt="" /></a>
-							<h2>Tempus aliquam veroeros</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
-							<h2>Aliquam ipsum sed dolore</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt="" /></a>
-							<h2>Cursis aliquam nisl</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt="" /></a>
-							<h2>Sed consequat phasellus</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt="" /></a>
-							<h2>Mauris id tellus arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt="" /></a>
-							<h2>Nunc vehicula id nulla</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/09.jpg" class="image"><img src="images/thumbs/09.jpg" alt="" /></a>
-							<h2>Neque et faucibus viverra</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt="" /></a>
-							<h2>Mattis ante fermentum</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt="" /></a>
-							<h2>Sed ac elementum arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
-							<h2>Vehicula id nulla dignissim</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
+                                            <?php }?>
 					</div>
 
 				<!-- Footer -->
