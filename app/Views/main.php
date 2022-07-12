@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Multiverse by HTML5 UP</title>
+		<title>Nature Collection</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="<?php echo base_url('/assets/galery/css/main.css');?>" />
@@ -12,7 +12,7 @@
             <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v14.0" nonce="FzuMjXYX"></script>
             
                 
-                    <div style="background-color: #5F8F25;z-index: 20000;height:12%; padding: 20px 0px;">
+                    <div style="background-color: #5F8F25;z-index: 20000;height:14%; padding: 20px 0px;">
                         <a style="background-color:grey; margin-right:20px;float:right; color:white; padding:10px 15px;" href = "/WebCodeIgniter/logout">Log Out</a>
                         <a style="background-color:grey; margin-right:20px;float:right; color:white; padding:10px 15px;" href = "/WebCodeIgniter/upload">Upload</a>
                     </div>
